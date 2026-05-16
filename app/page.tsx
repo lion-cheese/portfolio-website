@@ -61,48 +61,51 @@ const experiences = [
 
 const projects = [
   {
-    name: "Portfolio Website",
-    description:
-      "A personal portfolio website built with React, showcasing my professional experience and projects.",
-    tools: "Next.js, TypeScript, Tailwind CSS",
-    githubUrl: "https://github.com/lion-cheese/portfolio-website",
-    liveUrl: "https://project-1.example.com",
-  },
-  {
-    name: "Project 2",
-    description: "Description",
-    tools: "TBD",
-    githubUrl: "https://github.com/your-username/project-2",
+    name: "Rubik's Cube Solver",
+    image: "/projects/cube1.png",
+    description: "An interactive full-stack Rubik’s Cube web app that combines a 3D cube interface, solve history persistence, backend performance analysis, and optional AI-enhanced feedback to help users review and improve their solves.",
+    tools: "Next.js, React, TypeScript, Tailwind CSS, PostgreSQL, Supabase, OpenAI API",
+    githubUrl: "https://github.com/lion-cheese/rubiks-cube-ai",
     liveUrl: "https://project-2.example.com",
   },
-  {
-    name: "Project 3",
-    description: "Description",
-    tools: "TBD",
-    githubUrl: "https://github.com/your-username/project-3",
-    liveUrl: "https://project-3.example.com",
-  },
-  {
-    name: "Project 4",
-    description: "Description",
-    tools: "TBD",
-    githubUrl: "https://github.com/your-username/project-4",
-    liveUrl: "https://project-4.example.com",
-  },
-  {
-    name: "Project 5",
-    description: "Description",
-    tools: "TBD",
-    githubUrl: "https://github.com/your-username/project-5",
-    liveUrl: "https://project-5.example.com",
-  },
-  {
-    name: "Project 6",
-    description: "Description",
-    tools: "TBD",
-    githubUrl: "https://github.com/your-username/project-6",
-    liveUrl: "https://project-6.example.com",
-  },
+  // {
+  //   name: "LLM Knowledge Base",
+  //   image: "/projects/llm-knowledge-base.svg",
+  //   description: "Description",
+  //   tools: "TBD",
+  //   githubUrl: "https://github.com/lion-cheese/LLM-Knowledge-Base",
+  //   liveUrl: "https://project-3.example.com",
+  // },
+  // {
+  //   name: "Portfolio Website",
+  //   image: "/projects/portfolio.png",
+  //   description:
+  //     "A personal portfolio website built with React, showcasing my professional experience and projects.",
+  //   tools: "Next.js, TypeScript, Tailwind CSS",
+  //   githubUrl: "https://github.com/lion-cheese/portfolio-website",
+  //   liveUrl: "https://project-1.example.com",
+  // },
+  // {
+  //   name: "Project 4",
+  //   description: "Description",
+  //   tools: "TBD",
+  //   githubUrl: "https://github.com/your-username/project-4",
+  //   liveUrl: "https://project-4.example.com",
+  // },
+  // {
+  //   name: "Project 5",
+  //   description: "Description",
+  //   tools: "TBD",
+  //   githubUrl: "https://github.com/your-username/project-5",
+  //   liveUrl: "https://project-5.example.com",
+  // },
+  // {
+  //   name: "Project 6",
+  //   description: "Description",
+  //   tools: "TBD",
+  //   githubUrl: "https://github.com/your-username/project-6",
+  //   liveUrl: "https://project-6.example.com",
+  // },
 ];
 
 export default function Home() {
@@ -144,11 +147,12 @@ export default function Home() {
                     Hi, My name is Lian Cheng.
                   </h1>
                   <p className="mt-7 max-w-2xl text-base leading-8 text-[var(--muted)] sm:text-lg">
-                    I'm a Computer Engineering student at the University of Waterloo with interests in
-                    software engineering, AI, and full stack development. I enjoy building useful
-                    applications with a focus on clean design, practical functionality, and continuous
-                    improvement. Through academic, personal, and professional projects, I'm growing my
-                    skills in building software that solves real problems.
+                    I'm a fourth-year Computer Engineering student at the University of Waterloo with interests in 
+                    software engineering, AI, and full stack development. I enjoy building useful 
+                    applications with a focus on clean design, practical functionality, and continuous 
+                    improvement. Outside of software, I practice blindfolded Rubik’s Cube solving, 
+                    a hobby that reflects the same pattern recognition, structured problem-solving, 
+                    and attention to detail that I bring to engineering.
                   </p>
 
                   <div className="mt-10 flex flex-wrap gap-4">
@@ -256,6 +260,13 @@ export default function Home() {
               <div className="flex-1">
                 <div className="inline-flex rounded-full border border-white/10 bg-white/6 px-3 py-1 text-[0.68rem] font-medium uppercase tracking-[0.28em] text-[var(--accent)]">
                   Featured Project
+                </div>
+                <div className="mt-5 overflow-hidden rounded-[1.2rem] border border-white/10 bg-[rgba(10,18,31,0.65)] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+                  <img
+                    src={project.image}
+                    alt={`${project.name} project preview`}
+                    className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-[1.04]"
+                  />
                 </div>
                 <h3 className="mt-5 text-3xl leading-tight font-medium tracking-[-0.03em] text-[var(--foreground)]">
                   {project.name}

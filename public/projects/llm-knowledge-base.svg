@@ -1,0 +1,56 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" rx="44" fill="#08111E"/>
+  <rect x="32" y="32" width="1136" height="686" rx="32" fill="url(#bg)"/>
+  <circle cx="181" cy="156" r="150" fill="#38BDF8" fill-opacity="0.16"/>
+  <circle cx="988" cy="594" r="188" fill="#2563EB" fill-opacity="0.16"/>
+  <rect x="94" y="96" width="1012" height="558" rx="28" fill="#0B1727" stroke="#21334A"/>
+  <rect x="142" y="152" width="286" height="446" rx="24" fill="#0E1C2E"/>
+  <rect x="182" y="194" width="206" height="22" rx="11" fill="#93C5FD" fill-opacity="0.86"/>
+  <rect x="182" y="248" width="206" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.58"/>
+  <rect x="182" y="278" width="180" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.58"/>
+  <rect x="182" y="334" width="206" height="14" rx="7" fill="#38BDF8" fill-opacity="0.68"/>
+  <rect x="182" y="364" width="172" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.58"/>
+  <rect x="182" y="420" width="206" height="14" rx="7" fill="#14B8A6" fill-opacity="0.68"/>
+  <rect x="182" y="450" width="162" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.58"/>
+  <g filter="url(#shadow)">
+    <rect x="494" y="182" width="538" height="188" rx="24" fill="#101E31" stroke="#29425E"/>
+    <rect x="534" y="224" width="126" height="24" rx="12" fill="#A5D8FF" fill-opacity="0.84"/>
+    <rect x="534" y="274" width="420" height="16" rx="8" fill="#E2E8F0" fill-opacity="0.6"/>
+    <rect x="534" y="308" width="390" height="16" rx="8" fill="#E2E8F0" fill-opacity="0.44"/>
+    <rect x="866" y="220" width="126" height="110" rx="18" fill="url(#panel)"/>
+    <circle cx="929" cy="275" r="24" fill="#F8FAFC"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="494" y="404" width="252" height="164" rx="24" fill="#101E31" stroke="#29425E"/>
+    <rect x="528" y="438" width="132" height="18" rx="9" fill="#14B8A6" fill-opacity="0.72"/>
+    <rect x="528" y="480" width="184" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.56"/>
+    <rect x="528" y="510" width="168" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.4"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="780" y="404" width="252" height="164" rx="24" fill="#101E31" stroke="#29425E"/>
+    <path d="M832 516C860 470 890 470 918 516C946 562 976 562 1004 516" stroke="#60A5FA" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="832" cy="516" r="12" fill="#38BDF8"/>
+    <circle cx="918" cy="516" r="12" fill="#14B8A6"/>
+    <circle cx="1004" cy="516" r="12" fill="#60A5FA"/>
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="600" y1="32" x2="600" y2="718" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12233A"/>
+      <stop offset="1" stop-color="#0A1422"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="929" y1="220" x2="929" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+    <filter id="shadow" x="454" y="146" width="618" height="462" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="8"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.00784314 0 0 0 0 0.0313726 0 0 0 0 0.0941176 0 0 0 0.34 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+  </defs>
+</svg>
