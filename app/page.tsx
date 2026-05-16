@@ -1,5 +1,3 @@
-import portraitImage from "../portrait.jpg";
-
 const RESUME_URL = "/resume.pdf";
 const LINKEDIN_URL = "https://www.linkedin.com/in/liancheng-guo/";
 
@@ -159,7 +157,7 @@ export default function Home() {
                     <a
                       href={RESUME_URL}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="rounded-xl border border-[rgba(96,165,250,0.3)] bg-[linear-gradient(180deg,_rgba(96,165,250,0.9),_rgba(37,99,235,0.88))] px-6 py-3 text-sm font-medium text-[#f8fbff] shadow-[0_18px_40px_rgba(37,99,235,0.34)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_22px_48px_rgba(37,99,235,0.42)]"
                     >
                       Resume
@@ -181,7 +179,7 @@ export default function Home() {
                     <div className="relative w-full rounded-[2rem] border border-white/12 bg-[linear-gradient(180deg,rgba(15,23,38,0.88),rgba(8,14,24,0.72))] p-3 shadow-[0_26px_70px_rgba(2,8,23,0.55)] backdrop-blur-xl">
                       <div className="absolute inset-x-8 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(165,216,255,0.8),transparent)]" />
                       <img
-                        src={portraitImage.src}
+                        src="/portrait.jpg"
                         alt="Portrait"
                         className="aspect-[4/5] w-full rounded-[1.4rem] object-cover object-top"
                       />
